@@ -42,7 +42,7 @@
         <span class="text-4xl cursor-pointer text-yellow-50 font-black hover:text-red-500 transition-all duration-300">
           LYRICA
         </span>
-        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block text-white">
           <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
         </span>
       </div>
@@ -303,6 +303,11 @@
       if (e.name === 'menu') {
         e.name = 'close';
         ul.classList.add('top-[80px]', 'opacity-100');
+        ul.classList.add('bg-black', 'bg-opacity-95', 'backdrop-blur-md', 'rounded-b-xl');
+        ul.classList.add('shadow-black', 'drop-shadow-lg', 'drop-shadow-cyan-500/50');
+        ul.classList.remove('shadow-none');
+        
+        ul.classList.remove('bg-transparent', 'backdrop-blur-none', 'rounded-b-0');
       } else {
         e.name = 'menu';
         ul.classList.remove('top-[80px]', 'opacity-100');
