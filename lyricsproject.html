@@ -37,7 +37,7 @@
 <body>
   <div
     class="fixed w-full top-0 left-0 z-50 px-5 md:px-8 lg:px-16 py-3 shadow-black drop-shadow-lg drop-shadow-cyan-500/50">
-    <nav class="p-5 bg-black shadow md:flex md:justify-between md:items-center rounded-xl backdrop-blur-sm">
+    <nav class="p-5 bg-black shadow md:flex md:justify-between md:items-center rounded-3xl backdrop-blur-sm">
       <div class="flex justify-between items-center">
         <span class="text-4xl cursor-pointer text-yellow-50 font-black hover:text-red-500 transition-all duration-300">
           LYRICA
@@ -74,16 +74,16 @@
           Sing Along with the
           <span class="text-red-500 font-black inline-block">Right Words</span>
         </h1>
-        <p class="text-gray-600 mt-6 max-w-4xl text-base mx-auto">
+        <p class="text-gray-600 mt-6 max-w-4xl text-xsmd:text-base mx-auto">
           Stop humming and start singing!
-          <span class="text-gray-700 font-black inline-block">"Lyrica"</span>
+          <span class="text-gray-700  inline-block">"Lyrica"</span>
           is where the beat meets the meaning. From chart-toppers to underground hits, we deliver the precise, verified
           lyrics you need to take your karaoke game (or shower concert) to the next level. Ready to see the words? The
           perfect line is just a search away. Dive into our massive, constantly updated library of tracks spanning every
           genre and decade. Whether you're decoding a new release or reliving a classic chorus, just use the search bar
           above to instantly find the words to the music you love." I'am focusing on islamic songs and related contents
         </p>
-        <a class="inline-block bg-gradient-to-r from-red-900 to-red-700 hover:from-red-800 hover:to-red-600 text-white px-11 py-3 mt-11 text-xl  rounded-full font-bold"
+        <a class="inline-block bg-gradient-to-r from-red-900 to-red-700 hover:from-red-800 hover:to-red-600 text-white px-11 py-3 mt-3 md:mt-11 text-xl  rounded-full font-bold"
           href="#">Connect us</a>
       </div>
     </div>
@@ -95,7 +95,7 @@
         <h2 class="text-7xl font-black"><u>Songs</u></h2>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-32">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-6 md:mx-32">
         <!-- Card 1 -->
         <div
           class="rounded-xl  bg-white overflow-hidden transform transition-all  hover:bg-red-300 translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
@@ -199,36 +199,30 @@
       </div>
     </div>
   </section>
-  <section id="messagesection" class="py-16 px-4 bg-red-50">
+  <section id="messagesection" class="py-16 px-4 bg-red-50 flex items-center justify-center">
     <div class="container ">
-      <h2 class="flex items-center justify-center font-extrabold text-7xl">What you want ?</h2>
+      <h2 class="flex items-center justify-center font-extrabold text-4xl md:text-7xl">What you want ?</h2>
 
-  <div class="w-[99%] h-auto mt-8 mx-auto  mb-0 p-0 rounded-lg overflow-hidden shadow-xl ring-1 ring-black/10">
+  <div class="w-full md:w-[99%] h-auto mt-8 mx-auto mb-0 p-0 rounded-lg overflow-hidden shadow-xl ">
         <!-- Left Half -->
-        <div class="grid grid-cols-2 m-0 p-0 rounded-lg shadow-xl shadow-red-300 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 m-0 p-0 rounded-lg shadow-xl shadow-red-300 overflow-hidden ">
           <div
-            class="bg-gradient-to-r from-red-900 to-red-600 p-3 flex flex-col justify-center quick-shadow-lg border-gray-200">
-            <div class="text-white p-6 bg-[url(/img/image.png)] -space-y-8">
+            class="hidden md:flex bg-gradient-to-r from-red-900 to-red-600 p-3 flex-col justify-center border-gray-200">
+            <div class="text-white p-6 bg-[url(/img/image.png)] -space-y-2">
               <p class="text-[100px] font-black leading-none whitespace-nowrap inline-block">Let us Suggest</p>
               <br>
-              <br>
-              <br>
               <p class="text-[110px] font-black leading-none mt-0 pr-6 flex items-center whitespace-nowrap">
-                <span>Your</span>&nbsp;<span class="underline decoration-dashed text-red-400 ">favorite</span>
-
+                <span>Your</span>&nbsp;<span class="underline decoration-dashed text-red-400">favorite</span>
               </p>
               <br>
-              <br>
-
-              <p class="text-[150px] font-black leading-none">Songs!!</p>
+              <p class="text-7xl text-[150px] font-black leading-none">Songs!!</p>
             </div>
           </div>
 
           <!-- Right Half -->
-          <div class="bg-gradient-to-r from-red-600 to-red-700 p-9 flex items-center justify-center">
-
-            <div class="text-white text-center w-full max-w-md space-y-4 bg-[url(/img/image.png)] p-6 rounded-xl">
-              <h3 class="text-3xl font-black mb-6">Share Your Music Taste</h3>
+          <div class="bg-gradient-to-r from-red-600 to-red-700 p-4 md:p-9 flex items-center justify-center">
+            <div class="text-white text-center w-[90%] md:w-full max-w-md space-y-4 bg-[url(/img/image.png)] p-4 md:p-6 rounded-xl">
+              <h3 class="text-2xl md:text-3xl font-black mb-4 md:mb-6">Share Your Music Taste</h3>
               <input type="text" placeholder="Your name"
                 class="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all">
               <input type="email" placeholder="Your email"
